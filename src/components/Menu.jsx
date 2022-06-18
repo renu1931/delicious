@@ -1,0 +1,66 @@
+const Menu = [
+  {
+    id: 1,
+    category: "Starters",
+    heading: "  Lobster Bisque",
+    price: "$5.95",
+    description: "Lorem, deren, trataro, filede, nerada",
+  },
+  {
+    id: 2,
+    category: "Starters",
+    heading: "Crab Cake",
+    price: "$7.95",
+    description: "A delicate crab cake served on a toasted roll",
+  },
+  {
+    id: 3,
+    category: "Starters",
+    heading: "Mozzarella Stick",
+    price: "$4.95",
+    description: "Lorem, deren, trataro, filede, nerada",
+  },
+  {
+    id: 4,
+    category: "Salads",
+    heading: "Caesar Selections",
+    price: "$8.95",
+    description: "Lorem, deren, trataro, filede, nerada",
+  },
+  {
+    id: 5,
+    category: "Salads",
+    heading: " Spinach Salad",
+    price: "$9.95",
+    description: "Fresh spinach with mushrooms, hard boiled egg",
+  },
+  {
+    id: 6,
+    category: "Salads",
+    heading: " Greek Salad",
+    price: "$7.95",
+    description: "Fresh spinach, crisp romaine and Greek olives",
+  },
+  {
+    id: 7,
+    category: "Specialty",
+    heading: " Bread barrel",
+    price: "$6.95",
+    description: "Lorem, deren, trataro, filede, nerada",
+  },
+  {
+    id: 8,
+    category: "Specialty",
+    heading: "Lobster Roll",
+    price: "$12.95",
+    description: " Plump lobster meat, mayo toasted bulky roll",
+  },
+  {
+    id: 9,
+    category: "Specialty",
+    heading: "Tuscan Grilled",
+    price: "$9.95",
+    description: "Grilled chicken with provolone and roasted red pesto",
+  },
+];
+export default Menu;

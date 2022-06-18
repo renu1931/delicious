@@ -1,38 +1,584 @@
-.App {
-  text-align: center;
+/* navbar css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+#nav {
+  padding-left: 130px;
+  background-color: #000000e0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+#delicious {
+  padding-right: 30px;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 30px;
+ }
+#nav-ul{
+  padding-left: 40px;
+  padding-bottom: 5px;
+ font-weight: 600;
+font-family: 'Josefin Sans', sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+#nav-ul li{
+  padding-left: 15px;
+}
+#nav-btn{
+  background: #ffb03b;
+  border: none;
+  border-radius: 20px;
+ padding-left: 10px;
+ padding-right: 10px;
+ font-weight: 600;
+margin-left: 17px;
+}
+#nav-btn-a{
+  color: #fff;
+}
+/* home slider css */
+#home-blank-div::before{
+  content: "";
+  color: #fff;
+  background-color:#00000060;
+  position: absolute;
+  height: 700px;
+  width: 100%;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+#dropdown{
+  font-weight: 600;
+  color: gray;
+}
+#dropdown:hover{
+ color: #ffb03b;
+}
+#home-slider-main-div{
+  margin-bottom: 130px;
+}
+#home-slider-h1{
+  font-weight: 900;
+  font-size: 45px;
+   font-family: 'Cedarville Cursive', cursive;
+  padding-bottom: 20px;
+}
+#home-slider-p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+#home-slider-btn{
+  border: 2px solid #ffb03b;
+  margin-right: 15px;
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 900;
+  font-size:15px ;
+  margin-bottom: 14px;
+}
+#home-slider-btn:hover{
+background-color: #ffb03b;
+}
+#home-slider-p2 i{
+color: #ffb03b;
+padding-right: 10px;
+font-size: 20px;
+}
+#home-slider-p2{
+font-weight: 700;
+font-family: 'Josefin Sans', sans-serif;
+letter-spacing: 1px;
+}
+/* video section cs start */
+#video-h5{
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 30px;
+  font-weight: 800;
+  color: rgb(59, 55, 55);
+}
+#video{
+  margin-left: -15px;
+}
+#h5-span{
+  font-weight: 900;
+  font-size: 36px;
+}
+#video-p{
+  font-family: 'Josefin Sans', sans-serif;  
+  font-weight: 700;
+  font-size: 17px;
+  color: rgb(112, 109, 109);
+}
+#video-p3{
+  font-family: 'Josefin Sans', sans-serif;  
+  font-weight: 700;
+  font-size: 17px;
+  color: rgb(112, 109, 109);
+  padding-left: 40px;
+}
+#video-p1{
+  font-family: 'Josefin Sans', sans-serif;  
+  font-weight: 900;
+  font-size: 18px;
+  margin-top: -5px;
+  color: black;
+}
+#video-p1 i{
+color: #ffb03b;
+padding-right: 15px;
+}
+#restaurant-box{
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+  margin: 20px;
+  margin-right:50px;
+  padding: 30px;
+  margin-left: 45px;
+  border-radius: 8px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+#restaurant-box:hover{
+background-color: #ffb03b;
+color:white;
+}
+#restaurant-h4{
+  padding-top: 20px;
+  font-weight: 900;
+  font-size: 30px;
+}
+#restaurant-h6{
+  font-family: 'Josefin Sans', sans-serif;  
+  font-weight: 900;
+  font-size: 30px;
+  padding-bottom: 10px;
+  padding-top:10px;
+
+}
+#restaurant-h5{
+  font-family: 'Cedarville Cursive', cursive;
+  font-weight: 900;
+  font-size: 44px;
+}
+#restaurant-h5-span{
+  color: #ffb03b;
+}
+#restaurant-p{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-size: 18px;
+  font-weight: 600;
+}
+#restaurant-p1{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-size: 17px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+#restaurant-animation{
+  font-weight: bold;
+  position: relative;
+  animation: example 1s infinite;
+}
+@keyframes example {
+  from {top: 50px;}
+  to {top:0px;}
+}
+/* tasty menu css start */
+#tasty-h1{
+  font-family: 'Cedarville Cursive', cursive;
+  font-weight: 900;
+  text-shadow: 5px 5px 5px rgb(202, 125, 138);
+  font-size: 43px; 
+  padding-bottom: 40px;
+}
+#tasty-span{
+color: #ffb03b;
+text-shadow: 3px 3px 3px #679bd6;
+}
+#tasty-btn{
+  margin-right: 20px;
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: 2px solid #ffb03b;
+  font-family: 'Josefin Sans', sans-serif; 
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+  margin-bottom: 70px;
+}
+#tasty-btn:hover{
+background-color:#ffb03b;
+color: white;
+}
+#tasty-h6{
+  color: #ffb03b;
+
+  font-size: 23px;
+  font-weight: 600;
+}
+#tasty-span2{
+color: rgb(182, 174, 174);
+font-size: 17px;
+padding: 5px;
+}
+#tasty-p2{
+  font-size: 15px;
+  color: rgb(146, 140, 140);
+  padding-bottom: 20px;
+}
+#tasty-span3{
+  font-size: 17px;
+  color: black;
+  font-weight: 700;
+}
+.special-tab{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction:column;
+}
+#special-h1{
+font-family: cursive;
+  font-weight: 900; 
+  font-size: 45px;
+  padding-bottom:10px ;
+}
+#special-h1 span{
+  color: #ffb03b;
+}
+#special-para{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-size: 18px;
+  font-weight: 600; 
+  word-spacing: 2px;
+  padding-bottom: 25px;
+}
+#special-btn{
+ margin-top: 10px;
+ color: black;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ font-family: 'Josefin Sans', sans-serif; 
+ font-size: 20px;
+ font-weight: 600; 
+ border: none;
+ outline: none;
+ box-shadow: 3px 2px 2px pink;
+}
+#special-btn:hover{
+color: #ffb03b;
+}
+#special-h3{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 900;
+  font-size: 32px;
+  padding-bottom: 15px;
+}
+#special-p1{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 600;
+  font-size: 17px;
+}
+#background-black::before{
+  content: "";
+  color: #fff;
+  background-color:#0000008f;
+  position: absolute;
+  height: 617px;
+  width: 100%;
+}
+#organise-h1{
+  font-family: 'Cedarville Cursive', cursive;
+  text-shadow: 1px 1px white;
+  font-weight: 900;
+}
+#organise-h1 span{
+color: #ffb03b;
+}
+#organise-h2{
+  font-family: Arial, Helvetica, sans-serif ;
+  font-size: 25px;
+  font-weight: 700; 
+  border-bottom: 3px solid #ffb03b;
+  width: 11%;
+}
+#organise-p{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 800;
+  font-size: 17px;
+}
+#organise-p i{
+color: #ffb03b;
+padding-right: 5px;
+}
+#book-input{
+  width: 100%;
+  margin-top: 30px;
+  padding: 6px;
+  color: gray;
+  border-left: 2px solid rgb(136, 118, 118);
+  border-top: 2px solid rgb(136, 118, 118);
+ outline: none;
+ box-shadow: 2px 2px 3px rgb(136, 118, 118);
+}
+#book-h1{
+  font-family: 'Cedarville Cursive', cursive;
+  text-shadow: 2px 2px black;
+  font-size: 45px;
+  font-weight: 900; 
+}
+#book-h1 span{
+color: #ffb03b;
+text-shadow: 2px 2px #ffb03b;
+}
+#book-p{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 800;
+  font-size: 20px;
+}
+#book-textarea{
+  width:100%;
+  margin-top: 30px;
+  height: 130px;
+  border-left: 2px solid rgb(136, 118, 118);
+  border-top: 2px solid rgb(136, 118, 118);
+ outline:none;
+ box-shadow: 2px 2px 3px rgb(136, 118, 118);
+ padding: 5px;
+ color: gray;
+}
+#book-btn{
+ text-align: center;
+ margin: 25px;
+}
+#book-btn button{
+padding: 9px 25px;
+border-radius: 20px;
+border: none;
+background-color: #ffb03b;
+color: #fff;
+font-weight: 700;
+font-family: 'Josefin Sans', sans-serif; 
+letter-spacing: 1px;
+outline:none;
+}
+
+#photos-p{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 800;
+  font-size: 18px;
+}
+#photos{
+  height: 300px;
+  width: 332px;
+  margin: 0;
+  margin-left: -10px;
+  padding: 0;
+  border-top: 5px solid white;
+ transition: 2s;
+}
+#photos:hover{
+transform: scale(1.5);
+}
+#img-container{
+overflow: hidden;
+}
+#chefs-div::before{
+  content: "";
+  color: #fff;
+  background-color:#ffffff7e;
+  position: absolute;
+  height: 687px;
+  width: 100%;
+}
+#chefs-img{
+  width:325px;
+ 
+}
+#chef-icon-div{
+  position: absolute;
+  background-color: #fff;
+  width: 80%;
+  bottom: -16%;
+  padding: 10PX;
+  left:10%
+}
+#chefs-h3{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 800;
+  font-size: 22px; 
+  padding-top: 8px;
+  border-bottom: 2px solid #ffb03b;
+}
+#chefs-h6{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 800;
+  font-size: 16px; 
+}
+#poision-pic{
+  height: 300px;
+  width: 300px;
+}
+#testimonial{
+  width: 120px;
+  height:120px;
+  border-radius: 50%;
+  border: 6px solid #ffffff26;
+  background-position: center;
+}
+#testimonial{
+margin: auto;
+}
+#poision{
+  content: "";
+  color: #fff;
+  background-color:#00000087;
+  position: absolute;
+  height: 460px;
+  width: 100%;
+}
+#testimonials-h5{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 900;
+  font-size: 22px; 
+  padding-top: 10px;
+}
+#testimonials-p1{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 500;
+  font-size: 16px; 
+  margin-top: -8px;
+}
+#testimonials-p2{
+color: #ffb03b;
+}
+#testimonials-p3{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 500;
+  font-size: 19px; 
+}
+#testimonials-p3 i{
+padding: 5px;
+font-size: 25px;
+color:#ffffff26;
+}
+#map-iframe{
+  width: 100%;
+  height: 360px;
+}
+#contact-h1{
+  font-family: 'Cedarville Cursive', cursive;
+  text-shadow: 1px 1px black;
+  font-size: 45px;
+  font-weight: 900;  
+}
+#contact-h1 span{
+  color: #ffb03b;
+  text-shadow: 2px 2px #ffb03b;
+}
+#contact-p{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 800;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+#location-para{
+  padding: 10px;
+  color: #ffb03b;
+  font-size: 20px;
+}
+#location-para:hover{
+border-radius: 60%;
+color: white;
+background-color: #ffb03b;
+padding-left: 15px;
+padding-right: 15px;
+
+}
+#location-h3{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 900;
+  font-size: 23px;
+  padding-left: 18px;
+  
+}
+#location-p{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 18px;  
+}
+#message-input{
+  width: 100%;
+  margin: 12px;
+  padding: 8px;
+  color: gray;
+  border: 1px solid rgb(204, 198, 198);
+  outline:none;
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 600;
+  font-size: 16px;
+}
+#message-input1{
+  width: 100%;
+  margin: 12px;
+  padding: 8px;
+  color: gray;
+  border: 1px solid rgb(204, 198, 198);
+  outline:none;
+  height: 120px;
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 600;
+  font-size: 17px;
+}
+
+#delicious1{
+ font-weight: 900;
+ color: #ffb03b;
+ padding-bottom: 10px;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 35px;
+ }
+ #footer-p{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 600;
+  font-size: 17px;
+  padding-bottom: 10px;
+ }
+ #footer-icon i{
+  padding: 10px;
   color: white;
+  font-size: 16px;
+  background-color: #ffffff26;    
+  border-radius: 60%;
+  margin: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+#footer-icon i:hover{
+border-radius: 60%;
+color: white;
+background-color: #ffb03b;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#footer-p1{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 600;
+  font-size: 15px;
+}
+#one{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: 900;
+  font-size: 18px;
+}
+#two{
+color: #ffb03b;
+}
+#crausel-btn{
+  text-decoration: none;
+  color: #fff;
 }
