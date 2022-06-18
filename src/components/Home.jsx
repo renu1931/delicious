@@ -484,21 +484,19 @@ export default function Home() {
           <div className="col-md-11 m-auto">
             <div className="row">
               {items.map((elem) => {
-                const { heading, price, description } = elem;
+                const { id, heading, price, description } = elem;
                 return (
-                  <div className="col-md-6">
-                    <h6>
-                      <h6 id="tasty-h6">
-                        {heading}
-                        <span id="tasty-span2">
-                          --------------------------------------------------
-                        </span>
-                        <span id="tasty-span3">{price}</span>
-                        <p className="text-center" id="tasty-p2">
-                          {description}
-                        </p>
-                      </h6>
+                  <div className="col-md-6" key={id}>
+                    <h6 id="tasty-h6">
+                      {heading}
+                      <span id="tasty-span2">
+                        --------------------------------------------------
+                      </span>
+                      <span id="tasty-span3">{price}</span>
                     </h6>
+                    <p className="text-center" id="tasty-p2">
+                      {description}
+                    </p>
                   </div>
                 );
               })}
@@ -559,8 +557,8 @@ export default function Home() {
             {special.map((element) => {
               const { id, image, heading, para, paragraph } = element;
               return (
-                <div className="row">
-                  <div className="col-md-7 m-auto" key={id}>
+                <div className="row" key={id}>
+                  <div className="col-md-7 m-auto">
                     <h3 id="special-h3">{heading}</h3>
                     <p id="special-p1">{para}</p>
                     <p id="special-p1">{paragraph}</p>
