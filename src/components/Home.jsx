@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import Menu from "./Menu";
 import Special from "./special";
 import slide1 from "../images/slide1.jpg";
@@ -43,6 +44,22 @@ export default function Home() {
   const [items, setItems] = useState(Menu);
   const [special, setSpecial] = useState(Special);
   const [color, setColor] = useState(true);
+  const [backToTopButton, setBackToTopButton] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setBackToTopButton(true);
+      } else {
+        setBackToTopButton(false);
+      }
+    });
+  }, []);
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   const changeColor = () => {
     if (window.scrollY > 50) {
       setColor(false);
@@ -50,12 +67,14 @@ export default function Home() {
       setColor(true);
     }
   };
+
   useEffect(() => {
     window.addEventListener("scroll", changeColor);
     return () => {
       window.removeEventListener("scroll", changeColor);
     };
   }, []);
+
   const filterItem = (categItem) => {
     const updatedItems = Menu.filter((curElem) => {
       return curElem.category === categItem;
@@ -360,6 +379,14 @@ export default function Home() {
       </div>
 
       {/*crausel complete */}
+      {/*visiblity btn start */}
+      {backToTopButton && (
+        <div id="visible-btn" onClick={scrollUp}>
+          <i className="icon fa-solid fa-angle-up"></i>
+        </div>
+      )}
+
+      {/*visiblity btn complete */}
       {/*video section start*/}
       <div
         className="container-fluid py-5"

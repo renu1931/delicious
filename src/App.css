@@ -597,3 +597,28 @@ color: #ffb03b;
   text-decoration: none;
   color: #fff;
 }
+#visible-btn{
+  position: fixed;
+  right: 7%;
+   bottom: 12px;
+  border-radius: 50%;
+  background-color: rgb(185, 34, 34);
+  height: 38px;
+  width: 38px;
+  color: white;
+  z-index: 1;
+}
+.icon{
+margin-top: 8px;
+margin-left: 12px;
+  font-size: 20px;
+  animation: scrollTo 0.5s alternate ease infinite;
+}
+@keyframes scrollTo{
+  from{
+    transform: translateY(2px);
+  }
+  to{
+    transform: translateY(-1px);
+  }
+}
