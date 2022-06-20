@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Menu from "./Menu";
 import Special from "./special";
 import slide1 from "../images/slide1.jpg";
@@ -42,6 +42,20 @@ AOS.init({
 export default function Home() {
   const [items, setItems] = useState(Menu);
   const [special, setSpecial] = useState(Special);
+  const [color, setColor] = useState(true);
+  const changeColor = () => {
+    if (window.scrollY > 50) {
+      setColor(false);
+    } else {
+      setColor(true);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
+  }, []);
   const filterItem = (categItem) => {
     const updatedItems = Menu.filter((curElem) => {
       return curElem.category === categItem;
@@ -55,10 +69,17 @@ export default function Home() {
 
     setSpecial(updatedSpecial);
   };
+
   return (
     <>
       {/* navbar start */}
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="nav">
+
+      <nav
+        className={`navbar navbar-expand-lg navbar-dark   fixed-top ${
+          color && "nav_blue"
+        }`}
+        id="nav"
+      >
         <a className="navbar-brand" href="home" id="delicious">
           Delicious
         </a>
@@ -74,7 +95,7 @@ export default function Home() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav" id="nav-ul">
+          <ul className="navbar-nav " id="nav-ul">
             <li className="nav-item active">
               <a className="nav-link" href="/">
                 Home <span className="sr-only">(current)</span>
@@ -156,10 +177,12 @@ export default function Home() {
       </nav>
       {/*navbar complete */}
       {/*crausel start */}
+
       <div
         id="carouselExampleIndicators"
         className="carousel slide"
         data-ride="carousel"
+        style={{ marginTop: "-50px" }}
       >
         <ol className="carousel-indicators">
           <li
@@ -174,11 +197,11 @@ export default function Home() {
           <div className="carousel-item active">
             <div id="home-blank-div"></div>
             <img
-              className="d-block w-100 mt-5"
+              className="d-block w-100 "
               src={slide1}
               alt="First slide"
               id="home-slider-img"
-              height="600px"
+              height="700px"
             />
             <div
               className="carousel-caption d-none d-md-block"
@@ -206,26 +229,25 @@ export default function Home() {
                     BOOK A TABLE
                   </a>
                 </button>
+                <p className="" id="home-slider-p2" data-aos="fade-up">
+                  <i className="fa-solid fa-mobile-screen-button"></i>+1 5589
+                  55488 55
+                </p>
+                <p id="home-slider-p2" data-aos="fade-up">
+                  <i className="fa-regular fa-clock"></i>Mon-Sat: 11:00 AM -
+                  23:00 PM
+                </p>
               </div>
-
-              <p id="home-slider-p2" data-aos="fade-up">
-                <i className="fa-solid fa-mobile-screen-button"></i>+1 5589
-                55488 55
-              </p>
-              <p id="home-slider-p2" data-aos="fade-up">
-                <i className="fa-regular fa-clock"></i>Mon-Sat: 11:00 AM - 23:00
-                PM
-              </p>
             </div>
           </div>
           <div className="carousel-item">
             <div id="home-blank-div"></div>
             <img
-              className="d-block w-100 mt-5"
+              className="d-block w-100 "
               src={slide2}
               alt="Second slide"
               id="home-slider-img"
-              height="600px"
+              height="700px"
             />
             <div
               className="carousel-caption d-none d-md-block"
@@ -253,26 +275,25 @@ export default function Home() {
                     BOOK A TABLE
                   </a>
                 </button>
+                <p className="" id="home-slider-p2" data-aos="fade-up">
+                  <i className="fa-solid fa-mobile-screen-button"></i>+1 5589
+                  55488 55
+                </p>
+                <p id="home-slider-p2" data-aos="fade-up">
+                  <i className="fa-regular fa-clock"></i>Mon-Sat: 11:00 AM -
+                  23:00 PM
+                </p>
               </div>
-
-              <p id="home-slider-p2" data-aos="fade-up">
-                <i className="fa-solid fa-mobile-screen-button"></i>+1 5589
-                55488 55
-              </p>
-              <p id="home-slider-p2" data-aos="fade-up">
-                <i className="fa-regular fa-clock"></i>Mon-Sat: 11:00 AM - 23:00
-                PM
-              </p>
             </div>
           </div>
           <div className="carousel-item">
             <div id="home-blank-div"></div>
             <img
-              className="d-block w-100 mt-5"
+              className="d-block w-100 "
               src={slide3}
               alt="Third slide"
               id="home-slider-img"
-              height="600px"
+              height="700px"
             />
             <div
               className="carousel-caption d-none d-md-block"
@@ -300,16 +321,15 @@ export default function Home() {
                     BOOK A TABLE
                   </a>
                 </button>
+                <p className="" id="home-slider-p2" data-aos="fade-up">
+                  <i className="fa-solid fa-mobile-screen-button"></i>+1 5589
+                  55488 55
+                </p>
+                <p id="home-slider-p2" data-aos="fade-up">
+                  <i className="fa-regular fa-clock"></i>Mon-Sat: 11:00 AM -
+                  23:00 PM
+                </p>
               </div>
-
-              <p id="home-slider-p2" data-aos="fade-up">
-                <i className="fa-solid fa-mobile-screen-button"></i>+1 5589
-                55488 55
-              </p>
-              <p id="home-slider-p2" data-aos="fade-up">
-                <i className="fa-regular fa-clock"></i>Mon-Sat: 11:00 AM - 23:00
-                PM
-              </p>
             </div>
           </div>
         </div>
@@ -338,6 +358,7 @@ export default function Home() {
           <span className="sr-only">Next</span>
         </a>
       </div>
+
       {/*crausel complete */}
       {/*video section start*/}
       <div
@@ -349,10 +370,7 @@ export default function Home() {
             <div className="row">
               <div className="col-md-6">
                 <video loop autoPlay id="video">
-                  <source
-                    src="https://rr3---sn-gwpa-pmjs.googlevideo.com/videoplayback?expire=1655556893&ei=vHatYpSHOcyBjAT5tJKQDw&ip=64.145.79.147&id=o-AH8x_JG-DZLLyqritwAYgP3lpIe54XBFlA09Y4CVp-NG&itag=18&source=youtube&requiressl=yes&spc=4ocVC9-y9r73qHMCjkGohTymIx-seOU&vprv=1&mime=video%2Fmp4&ns=b6-ZFII_FIitdAWM9ohRyXoG&cnr=14&ratebypass=yes&dur=60.046&lmt=1653949194900670&fexp=24001373,24007246&c=WEB&txp=6218224&n=bqcIXd8MCRoMag&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIgINGPAHvHpoHmk0qx0iwL_QBqa5RQaOUVoQHkZAo1AmUCIQCg_hTv-DI1-SVC07TVTHPfCoN0aXRT5xqIcncnkW4DDw%3D%3D&redirect_counter=1&rm=sn-ab5eee76&req_id=4b87ac771a77a3ee&cms_redirect=yes&ipbypass=yes&mh=eT&mip=2405:201:5804:d008:94c2:d60d:331f:2d4&mm=31&mn=sn-gwpa-pmjs&ms=au&mt=1655534935&mv=m&mvi=3&pl=49&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhAL6Pp-QSvqoOdh-_YVuHhmbHrLZcsyrXARxlpWCO0rpgAiAC5PIq7cBowIGlSzvE0N0yqVxJI1W867GsM1KBOUkQbw%3D%3D"
-                    type="video/mp4"
-                  />
+                  <source src="https://rr3---sn-gwpa-pmjs.googlevideo.com/videoplayback?expire=1655713470&ei=XtqvYrfwC7TZxN8P0LS_8Ao&ip=147.78.226.88&id=o-APF-Bz2q0UP8q7fs3ky7-OQ8jdu7dDeV1242OnUnzt-2&itag=18&source=youtube&requiressl=yes&spc=4ocVC0_zdQdpsvXWNYJlW5ohegIKkMU&vprv=1&mime=video%2Fmp4&ns=ruo8k2wimoW5jgkzOjAkM9EG&cnr=14&ratebypass=yes&dur=60.046&lmt=1653949194900670&fexp=24001373,24007246&c=WEB&txp=6218224&n=tV7eJgTyHED5sA&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIgOOAc_Rge8ScLec9bd0lN0t2Lhm9_lrA7c3YmvM3wdIcCIQCjee1bN0yX3LrZVxrEI7Ur5-1a-6MTG1Cma6hgQ47pvw%3D%3D&redirect_counter=1&rm=sn-aige6k7z&req_id=83417a7c0c25a3ee&cms_redirect=yes&ipbypass=yes&mh=eT&mip=2405:201:5804:d008:c073:46ca:c588:b7d5&mm=31&mn=sn-gwpa-pmjs&ms=au&mt=1655691401&mv=m&mvi=3&pl=49&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAPGBl5m04GAi8cSEfcN2W6HU23C6VTuDcaV9aT2c1TgvAiEA5wP7nW16Y9YJpUOuaQZkioz8CAsEFpAf7kyoLCmR4gk%3D" />
                 </video>
               </div>
               <div className="col-sm-6 pl-4 pr-5">
@@ -446,12 +464,12 @@ export default function Home() {
       </div>
       {/*reataurant section complete */}
       {/*check our tasty menu section start */}
-      <h1 className="text-center" id="tasty-h1">
+      <h1 className="text-center pt-2" id="tasty-h1">
         Check our tasty
         <span id="tasty-span">Menu</span>
       </h1>
-      <div className="menu-tabs-container text-center">
-        <div className="menu-tab ">
+      <div className="menu-tabs-container text-center pt-2">
+        <div className="menu-tab">
           <button className="btn" id="tasty-btn" onClick={() => setItems(Menu)}>
             Show All
           </button>

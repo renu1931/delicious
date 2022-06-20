@@ -7,9 +7,18 @@
 
 #nav {
   padding-left: 130px;
-  background-color: #000000e0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+ }
+ .navbar{
+  position: fixed;
+  width: 100%;
+  background-color:#545454;
+ 
+ }
+ .nav_blue{
+  background-color: transparent;
+ 
  }
 #delicious {
   padding-right: 30px;
@@ -46,7 +55,9 @@ margin-left: 17px;
   position: absolute;
   height: 700px;
   width: 100%;
+  
 }
+
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
@@ -59,13 +70,13 @@ margin-left: 17px;
  color: #ffb03b;
 }
 #home-slider-main-div{
-  margin-bottom: 130px;
+  margin-bottom: 100px;
 }
 #home-slider-h1{
   font-weight: 900;
   font-size: 45px;
    font-family: 'Cedarville Cursive', cursive;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 #home-slider-p{
   font-family: 'Josefin Sans', sans-serif;
@@ -73,6 +84,7 @@ margin-left: 17px;
   font-weight: 500;
   padding-bottom: 10px;
 }
+
 #home-slider-btn{
   border: 2px solid #ffb03b;
   margin-right: 15px;
@@ -85,16 +97,19 @@ margin-left: 17px;
   font-size:15px ;
   margin-bottom: 14px;
 }
+
 #home-slider-btn:hover{
 background-color: #ffb03b;
 }
 #home-slider-p2 i{
 color: #ffb03b;
+padding-left: 20px;
 padding-right: 10px;
 font-size: 20px;
 }
 #home-slider-p2{
 font-weight: 700;
+color: #fff;
 font-family: 'Josefin Sans', sans-serif;
 letter-spacing: 1px;
 }
