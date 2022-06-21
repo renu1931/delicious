@@ -125,32 +125,32 @@ export default function Home() {
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="/about">
+              <a className="nav-link" href="#about">
                 About
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="/menu">
+              <a className="nav-link" href="#menu">
                 Menu
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="/specials">
+              <a className="nav-link" href="#specials">
                 Specials
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="/events">
+              <a className="nav-link" href="#events">
                 Events
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="/chefs">
+              <a className="nav-link" href="#chefs">
                 Chefs
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="/gallery">
+              <a className="nav-link" href="#gallery">
                 Gallery
               </a>
             </li>
@@ -186,12 +186,12 @@ export default function Home() {
               </div>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="/contact">
+              <a className="nav-link" href="#contact">
                 Contact
               </a>
             </li>
             <button id="nav-btn">
-              <a className="nav-link" href="/book a table" id="nav-btn-a">
+              <a className="nav-link" href="#book a table" id="nav-btn-a">
                 Book a table
               </a>
             </button>
@@ -396,13 +396,14 @@ export default function Home() {
       <div
         className="container-fluid py-5"
         style={{ backgroundColor: "#f5deb340" }}
+        id="about"
       >
         <div className="row">
           <div className="col-sm-12">
             <div className="row">
               <div className="col-md-6">
                 <video loop autoPlay id="video">
-                  <source src="https://rr2---sn-qxaeeney.googlevideo.com/videoplayback?expire=1655802538&ei=STaxYr7uOPTAmLAP7ICtwAs&ip=181.214.218.59&id=o-AKaykkBjGttOP3gtD5P0DuetWPhc8j79KD1aQLx8aUiX&itag=18&source=youtube&requiressl=yes&spc=4ocVCxDHx2nNCfRopkO91iWw8VOjUDs&vprv=1&mime=video%2Fmp4&ns=OFHjs2yAk5WnEIxDPwCs3gIG&cnr=14&ratebypass=yes&dur=60.046&lmt=1653949194900670&fexp=24001373,24007246&c=WEB&txp=6218224&n=neLnLG62-RudPg&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIhAOJ-WEGz9LNpuJVEzSSm8lYZ-xPVbe6WR5AANWSsG049AiBddTMHLZyERj7bNqKQISpOT7LsJLnYSSEvQeneaU_h3Q%3D%3D&rm=sn-5hnesz76&req_id=f46f2431baeda3ee&cm2rm=sn-gwpa-ccpz76,sn-gwpa-qxae77d&redirect_counter=3&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=eT&mip=2405:201:5804:d008:3d29:d709:6c6e:44e&mm=30&mn=sn-qxaeeney&ms=nxu&mt=1655780907&mv=m&mvi=2&pl=49&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRAIgU5sTNafy56H5ArmM9RowWfdmniiK-D5x3QJ2SDwucykCIC0Ck79aJREQ5Vcbb_4nx5g7rZ-TgQ1nuGc6ZV0KgsDe" />
+                  <source src="https://rr3---sn-gwpa-pmjs.googlevideo.com/videoplayback?expire=1655828147&ei=U5qxYs2PJ5zZx_AP48et6AI&ip=156.146.41.30&id=o-AMg77LlAT1Y8bsh3xZj9ry0fM-Vupk9n4g8dPdGyV1FG&itag=18&source=youtube&requiressl=yes&spc=4ocVC561mr26SMVaBhyzszqBOrEDPr4&vprv=1&mime=video%2Fmp4&ns=xPMkCE6dtW_pQcCeTQSw7OUG&cnr=14&ratebypass=yes&dur=60.046&lmt=1653949194900670&fexp=24001373,24007246&c=WEB&txp=6218224&n=_acVv8JRLiuHyQ&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgBar8umoelljoH8DATPco6FMcKq2pPVCbg5UzKYrPPWICICRO0tvZfRCmssTLerlEhcCkWaOgdfWr6JqNL6v44la1&redirect_counter=1&rm=sn-4g5eks7l&req_id=b623391eeeaa3ee&cms_redirect=yes&ipbypass=yes&mh=eT&mip=2405:201:5804:d008:65a2:6b79:1fa6:1b75&mm=31&mn=sn-gwpa-pmjs&ms=au&mt=1655806367&mv=m&mvi=3&pl=49&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRAIgCSHOqVX0OMrx-bXCvRtEnH9Y0ruV68JoAuiJUP-A2pYCIEw7Q0_icPCII1jRZiC-Unc0bVZn4CApHVEMmNPz6RBX" />
                 </video>
               </div>
               <div className="col-sm-6 pl-4 pr-5">
@@ -496,155 +497,164 @@ export default function Home() {
       </div>
       {/*reataurant section complete */}
       {/*check our tasty menu section start */}
-      <h1 className="text-center pt-2" id="tasty-h1">
-        Check our tasty
-        <span id="tasty-span">Menu</span>
-      </h1>
-      <div className="menu-tabs-container text-center pt-2">
-        <div className="menu-tab">
-          <button className="btn" id="tasty-btn" onClick={() => setItems(Menu)}>
-            Show All
-          </button>
-          <button
-            className="btn"
-            id="tasty-btn"
-            onClick={() => filterItem("Starters")}
-          >
-            Starters
-          </button>
-          <button
-            className="btn"
-            id="tasty-btn"
-            onClick={() => filterItem("Salads")}
-          >
-            Salads
-          </button>
-          <button
-            className="btn"
-            id="tasty-btn"
-            onClick={() => filterItem("Specialty")}
-          >
-            Specialty
-          </button>
-        </div>
-      </div>
-      {/*  menu description*/}
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-11 m-auto">
-            <div className="row">
-              {items.map((elem) => {
-                const { id, heading, price, description } = elem;
-                return (
-                  <div className="col-md-6" key={id}>
-                    <h6 id="tasty-h6">
-                      {heading}
-                      <span id="tasty-span2">
-                        --------------------------------------------------
-                      </span>
-                      <span id="tasty-span3">{price}</span>
-                    </h6>
-                    <p className="text-center" id="tasty-p2">
-                      {description}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
+      <section id="menu">
+        <h1 className="text-center pt-2" id="tasty-h1">
+          Check our tasty
+          <span id="tasty-span">Menu</span>
+        </h1>
+        <div className="menu-tabs-container text-center pt-2">
+          <div className="menu-tab">
+            <button
+              className="btn"
+              id="tasty-btn"
+              onClick={() => setItems(Menu)}
+            >
+              Show All
+            </button>
+            <button
+              className="btn"
+              id="tasty-btn"
+              onClick={() => filterItem("Starters")}
+            >
+              Starters
+            </button>
+            <button
+              className="btn"
+              id="tasty-btn"
+              onClick={() => filterItem("Salads")}
+            >
+              Salads
+            </button>
+            <button
+              className="btn"
+              id="tasty-btn"
+              onClick={() => filterItem("Specialty")}
+            >
+              Specialty
+            </button>
           </div>
         </div>
-      </div>
-
-      {/*check our tasty menu section complete */}
-      {/*check our special section start */}
-      <h1 className="text-center pt-5 mt-5" id="special-h1">
-        Check our <span>Specials</span>
-      </h1>
-      <p className="text-center" id="special-para">
-        Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
-        <br />
-        adipisci expedita at voluptas atque vitae autem.
-      </p>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-3">
-            <div className="special-tabs-container">
-              <div className="special-tab">
-                <button
-                  id="special_est"
-                  className={`specialBtn ${
-                    selectedItem === "special_est" ? "specialBtnActive" : null
-                  }`}
-                  onClick={(e) => selectListItem(e)}
-                >
-                  Modi sit est
-                </button>
-                <button
-                  id="special_sed"
-                  className={`specialBtn ${
-                    selectedItem === "special_sed" ? "specialBtnActive" : null
-                  }`}
-                  onClick={(e) => selectListItem(e)}
-                >
-                  Unde praesentium sed
-                </button>
-                <button
-                  id="special_vel"
-                  className={`specialBtn ${
-                    selectedItem === "special_vel" ? "specialBtnActive" : null
-                  }`}
-                  onClick={(e) => selectListItem(e)}
-                >
-                  Pariatur explicabo vel
-                </button>
-                <button
-                  id="special_quasi"
-                  className={`specialBtn ${
-                    selectedItem === "special_quasi" ? "specialBtnActive" : null
-                  }`}
-                  onClick={(e) => selectListItem(e)}
-                >
-                  Nostrum qui quasi
-                </button>
-                <button
-                  id="special_aut"
-                  className={`specialBtn ${
-                    selectedItem === "special_aut" ? "specialBtnActive" : null
-                  }`}
-                  onClick={(e) => selectListItem(e)}
-                >
-                  Iusto ut expedita aut
-                </button>
+        {/*  menu description*/}
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-11 m-auto">
+              <div className="row">
+                {items.map((elem) => {
+                  const { id, heading, price, description } = elem;
+                  return (
+                    <div className="col-md-6" key={id}>
+                      <h6 id="tasty-h6">
+                        {heading}
+                        <span id="tasty-span2">
+                          --------------------------------------------------
+                        </span>
+                        <span id="tasty-span3">{price}</span>
+                      </h6>
+                      <p className="text-center" id="tasty-p2">
+                        {description}
+                      </p>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
-          <div className="col-md-9">
-            {!!selectedData &&
-              selectedData.map((data) => {
-                const { id, image, heading, para, paragraph } = data;
-                return (
-                  <div className="row" key={id}>
-                    <div className="col-md-7 m-auto">
-                      <h3 id="special-h3">{heading}</h3>
-                      <p id="special-p1">{para}</p>
-                      <p id="special-p1">{paragraph}</p>
-                    </div>
+        </div>
+      </section>
+      {/*check our tasty menu section complete */}
+      {/*check our special section start */}
+      <section id="specials">
+        <h1 className="text-center pt-5 mt-5" id="special-h1">
+          Check our <span>Specials</span>
+        </h1>
+        <p className="text-center" id="special-para">
+          Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+          <br />
+          adipisci expedita at voluptas atque vitae autem.
+        </p>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-3">
+              <div className="special-tabs-container">
+                <div className="special-tab">
+                  <button
+                    id="special_est"
+                    className={`specialBtn ${
+                      selectedItem === "special_est" ? "specialBtnActive" : null
+                    }`}
+                    onClick={(e) => selectListItem(e)}
+                  >
+                    Modi sit est
+                  </button>
+                  <button
+                    id="special_sed"
+                    className={`specialBtn ${
+                      selectedItem === "special_sed" ? "specialBtnActive" : null
+                    }`}
+                    onClick={(e) => selectListItem(e)}
+                  >
+                    Unde praesentium sed
+                  </button>
+                  <button
+                    id="special_vel"
+                    className={`specialBtn ${
+                      selectedItem === "special_vel" ? "specialBtnActive" : null
+                    }`}
+                    onClick={(e) => selectListItem(e)}
+                  >
+                    Pariatur explicabo vel
+                  </button>
+                  <button
+                    id="special_quasi"
+                    className={`specialBtn ${
+                      selectedItem === "special_quasi"
+                        ? "specialBtnActive"
+                        : null
+                    }`}
+                    onClick={(e) => selectListItem(e)}
+                  >
+                    Nostrum qui quasi
+                  </button>
+                  <button
+                    id="special_aut"
+                    className={`specialBtn ${
+                      selectedItem === "special_aut" ? "specialBtnActive" : null
+                    }`}
+                    onClick={(e) => selectListItem(e)}
+                  >
+                    Iusto ut expedita aut
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-9">
+              {!!selectedData &&
+                selectedData.map((data) => {
+                  const { id, image, heading, para, paragraph } = data;
+                  return (
+                    <div className="row" key={id}>
+                      <div className="col-md-7 m-auto">
+                        <h3 id="special-h3">{heading}</h3>
+                        <p id="special-p1">{para}</p>
+                        <p id="special-p1">{paragraph}</p>
+                      </div>
 
-                    <div className="col-md-4">
-                      <img src={image} alt="my-pic" className="img-fluid" />
+                      <div className="col-md-4">
+                        <img src={image} alt="my-pic" className="img-fluid" />
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+            </div>
           </div>
         </div>
-      </div>
-
+      </section>
       {/*check our special section complete */}
 
       {/*event section start */}
       <div id="background-black"></div>
       <div
+        id="events"
         className="py-5"
         style={{
           backgroundImage: `url(${slider_background})`,
@@ -769,7 +779,7 @@ export default function Home() {
       </div>
       {/*event section complete */}
       {/*book a table section start */}
-      <div className="container py-5 my-3">
+      <div className="container py-5 my-3" id="book a table">
         <div className="row">
           <div className="col-md-11 m-auto">
             <h1 className="text-center" id="book-h1">
@@ -808,7 +818,7 @@ export default function Home() {
       </div>
       {/*book a table section complete */}
       {/*photos section start */}
-      <div className="container-fluid">
+      <div className="container-fluid" id="gallery">
         <h1 className="text-center py-2" id="book-h1">
           Some photos from<span> Our Restaurant</span>
         </h1>
@@ -851,6 +861,7 @@ export default function Home() {
       {/*chefs  section start */}
       <div id="chefs-div"></div>
       <div
+        id="chefs"
         className="py-5"
         style={{
           backgroundImage: `url(${chefs_bg})`,
@@ -1081,7 +1092,7 @@ export default function Home() {
       </div>
       {/*poision  section complete */}
       {/*contact us  section start */}
-      <div className="container-fluid py-5">
+      <div className="container-fluid py-5" id="contact">
         <h1 className="text-center" id="contact-h1">
           <span>Contact</span> Us
         </h1>
