@@ -42,9 +42,19 @@ AOS.init({
 
 export default function Home() {
   const [items, setItems] = useState(Menu);
-  const [special, setSpecial] = useState(Special);
   const [color, setColor] = useState(true);
   const [backToTopButton, setBackToTopButton] = useState(false);
+  const [selectedItem, setSelectedItem] = useState("special_est");
+  const [selectedData, setSelectedData] = useState([]);
+  const selectListItem = (e) => setSelectedItem(e.target.id);
+
+  useEffect(() => {
+    const tempArray = Special.filter((data) =>
+      data.id === selectedItem ? data : ""
+    );
+    setSelectedData(tempArray);
+  }, [selectedItem]);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
@@ -54,6 +64,7 @@ export default function Home() {
       }
     });
   }, []);
+
   const scrollUp = () => {
     window.scrollTo({
       top: 0,
@@ -80,13 +91,6 @@ export default function Home() {
       return curElem.category === categItem;
     });
     setItems(updatedItems);
-  };
-  const filterSpecials = (categSpecial) => {
-    const updatedSpecial = Special.filter((curSpec) => {
-      return categSpecial === curSpec.category;
-    });
-
-    setSpecial(updatedSpecial);
   };
 
   return (
@@ -194,6 +198,7 @@ export default function Home() {
           </ul>
         </div>
       </nav>
+
       {/*navbar complete */}
       {/*crausel start */}
 
@@ -566,32 +571,47 @@ export default function Home() {
             <div className="special-tabs-container">
               <div className="special-tab">
                 <button
-                  id="special-btn"
-                  onClick={() => filterSpecials("Modi sit est")}
+                  id="special_est"
+                  className={`specialBtn ${
+                    selectedItem === "special_est" ? "specialBtnActive" : null
+                  }`}
+                  onClick={(e) => selectListItem(e)}
                 >
                   Modi sit est
                 </button>
                 <button
-                  id="special-btn"
-                  onClick={() => filterSpecials("Unde praesentium sed")}
+                  id="special_sed"
+                  className={`specialBtn ${
+                    selectedItem === "special_sed" ? "specialBtnActive" : null
+                  }`}
+                  onClick={(e) => selectListItem(e)}
                 >
                   Unde praesentium sed
                 </button>
                 <button
-                  id="special-btn"
-                  onClick={() => filterSpecials("Pariatur explicabo vel")}
+                  id="special_vel"
+                  className={`specialBtn ${
+                    selectedItem === "special_vel" ? "specialBtnActive" : null
+                  }`}
+                  onClick={(e) => selectListItem(e)}
                 >
                   Pariatur explicabo vel
                 </button>
                 <button
-                  id="special-btn"
-                  onClick={() => filterSpecials("Nostrum qui quasi")}
+                  id="special_quasi"
+                  className={`specialBtn ${
+                    selectedItem === "special_quasi" ? "specialBtnActive" : null
+                  }`}
+                  onClick={(e) => selectListItem(e)}
                 >
                   Nostrum qui quasi
                 </button>
                 <button
-                  id="special-btn"
-                  onClick={() => filterSpecials("Iusto ut expedita aut")}
+                  id="special_aut"
+                  className={`specialBtn ${
+                    selectedItem === "special_aut" ? "specialBtnActive" : null
+                  }`}
+                  onClick={(e) => selectListItem(e)}
                 >
                   Iusto ut expedita aut
                 </button>
@@ -599,22 +619,23 @@ export default function Home() {
             </div>
           </div>
           <div className="col-md-9">
-            {special.map((element) => {
-              const { id, image, heading, para, paragraph } = element;
-              return (
-                <div className="row" key={id}>
-                  <div className="col-md-7 m-auto">
-                    <h3 id="special-h3">{heading}</h3>
-                    <p id="special-p1">{para}</p>
-                    <p id="special-p1">{paragraph}</p>
-                  </div>
+            {!!selectedData &&
+              selectedData.map((data) => {
+                const { id, image, heading, para, paragraph } = data;
+                return (
+                  <div className="row" key={id}>
+                    <div className="col-md-7 m-auto">
+                      <h3 id="special-h3">{heading}</h3>
+                      <p id="special-p1">{para}</p>
+                      <p id="special-p1">{paragraph}</p>
+                    </div>
 
-                  <div className="col-md-4">
-                    <img src={image} alt="my-pic" className="img-fluid" />
+                    <div className="col-md-4">
+                      <img src={image} alt="my-pic" className="img-fluid" />
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
           </div>
         </div>
       </div>

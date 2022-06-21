@@ -6,48 +6,44 @@ import special5 from "../images/specials5.jpg";
 
 const Special = [
   {
-    id: 1,
+    id: "special_est",
     image: special1,
     category: "Modi sit est",
     heading: "Architecto ut aperiam autem id",
-    para:
-      "Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka",
+    para: "Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka",
     paragraph:
       "Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero",
   },
   {
-    id: 2,
+    id: "special_sed",
     image: special2,
     category: "Unde praesentium sed",
     heading: "Et blanditiis nemo veritatis excepturi",
-    para:
-      "Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka",
+    para: "Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka",
     paragraph:
       "Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal",
   },
   {
-    id: 3,
+    id: "special_vel",
     image: special3,
     category: "Pariatur explicabo vel",
     heading: "Impedit facilis occaecati odio neque aperiam sit",
-    para:
-      "Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut",
+    para: "Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut",
     paragraph:
       "Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae",
   },
   {
-    id: 4,
+    id: "special_quasi",
     image: special4,
     category: "Nostrum qui quasi",
     heading:
       "Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore",
-    para:
-      "Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus",
+    para: "Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus",
     paragraph:
       "Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore",
   },
   {
-    id: 5,
+    id: "special_aut",
     image: special5,
     category: "Iusto ut expedita aut",
     heading: "Est eveniet ipsam sindera pad rone matrelat sando reda",
