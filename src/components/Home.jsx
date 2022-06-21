@@ -345,7 +345,7 @@ export default function Home() {
                     BOOK A TABLE
                   </a>
                 </button>
-                <p className="" id="home-slider-p2" data-aos="fade-up">
+                <p id="home-slider-p2" data-aos="fade-up">
                   <i className="fa-solid fa-mobile-screen-button"></i>+1 5589
                   55488 55
                 </p>
@@ -402,7 +402,7 @@ export default function Home() {
             <div className="row">
               <div className="col-md-6">
                 <video loop autoPlay id="video">
-                  <source src="https://rr3---sn-gwpa-pmjs.googlevideo.com/videoplayback?expire=1655713470&ei=XtqvYrfwC7TZxN8P0LS_8Ao&ip=147.78.226.88&id=o-APF-Bz2q0UP8q7fs3ky7-OQ8jdu7dDeV1242OnUnzt-2&itag=18&source=youtube&requiressl=yes&spc=4ocVC0_zdQdpsvXWNYJlW5ohegIKkMU&vprv=1&mime=video%2Fmp4&ns=ruo8k2wimoW5jgkzOjAkM9EG&cnr=14&ratebypass=yes&dur=60.046&lmt=1653949194900670&fexp=24001373,24007246&c=WEB&txp=6218224&n=tV7eJgTyHED5sA&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIgOOAc_Rge8ScLec9bd0lN0t2Lhm9_lrA7c3YmvM3wdIcCIQCjee1bN0yX3LrZVxrEI7Ur5-1a-6MTG1Cma6hgQ47pvw%3D%3D&redirect_counter=1&rm=sn-aige6k7z&req_id=83417a7c0c25a3ee&cms_redirect=yes&ipbypass=yes&mh=eT&mip=2405:201:5804:d008:c073:46ca:c588:b7d5&mm=31&mn=sn-gwpa-pmjs&ms=au&mt=1655691401&mv=m&mvi=3&pl=49&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAPGBl5m04GAi8cSEfcN2W6HU23C6VTuDcaV9aT2c1TgvAiEA5wP7nW16Y9YJpUOuaQZkioz8CAsEFpAf7kyoLCmR4gk%3D" />
+                  <source src="https://rr2---sn-qxaeeney.googlevideo.com/videoplayback?expire=1655802538&ei=STaxYr7uOPTAmLAP7ICtwAs&ip=181.214.218.59&id=o-AKaykkBjGttOP3gtD5P0DuetWPhc8j79KD1aQLx8aUiX&itag=18&source=youtube&requiressl=yes&spc=4ocVCxDHx2nNCfRopkO91iWw8VOjUDs&vprv=1&mime=video%2Fmp4&ns=OFHjs2yAk5WnEIxDPwCs3gIG&cnr=14&ratebypass=yes&dur=60.046&lmt=1653949194900670&fexp=24001373,24007246&c=WEB&txp=6218224&n=neLnLG62-RudPg&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIhAOJ-WEGz9LNpuJVEzSSm8lYZ-xPVbe6WR5AANWSsG049AiBddTMHLZyERj7bNqKQISpOT7LsJLnYSSEvQeneaU_h3Q%3D%3D&rm=sn-5hnesz76&req_id=f46f2431baeda3ee&cm2rm=sn-gwpa-ccpz76,sn-gwpa-qxae77d&redirect_counter=3&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=eT&mip=2405:201:5804:d008:3d29:d709:6c6e:44e&mm=30&mn=sn-qxaeeney&ms=nxu&mt=1655780907&mv=m&mvi=2&pl=49&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRAIgU5sTNafy56H5ArmM9RowWfdmniiK-D5x3QJ2SDwucykCIC0Ck79aJREQ5Vcbb_4nx5g7rZ-TgQ1nuGc6ZV0KgsDe" />
                 </video>
               </div>
               <div className="col-sm-6 pl-4 pr-5">
