@@ -17,6 +17,7 @@ import chefs_bg from "../images/chefs_bg.jpg";
 import chefs_1 from "../images/chefs_1.jpg";
 import chefs_2 from "../images/chefs_2.jpg";
 import chefs_3 from "../images/chefs_3.jpg";
+import about from "../images/about.jpg";
 import event_birthday from "../images/event_birthday.jpg";
 import event_custom from "../images/event_custom.jpg";
 import event_private from "../images/event_private.jpg";
@@ -71,6 +72,7 @@ export default function Home() {
       behavior: "smooth",
     });
   };
+
   const changeColor = () => {
     if (window.scrollY > 50) {
       setColor(false);
@@ -190,12 +192,12 @@ export default function Home() {
                 Contact
               </a>
             </li>
-            <button id="nav-btn">
-              <a className="nav-link" href="#book a table" id="nav-btn-a">
-                Book a table
-              </a>
-            </button>
           </ul>
+          <button id="nav-btn">
+            <a className="nav-link" href="#book a table" id="nav-btn-a">
+              Book a table
+            </a>
+          </button>
         </div>
       </nav>
 
@@ -225,7 +227,7 @@ export default function Home() {
               src={slide1}
               alt="First slide"
               id="home-slider-img"
-              height="700px"
+              height="auto"
             />
             <div
               className="carousel-caption d-none d-md-block"
@@ -271,7 +273,7 @@ export default function Home() {
               src={slide2}
               alt="Second slide"
               id="home-slider-img"
-              height="700px"
+              height="auto"
             />
             <div
               className="carousel-caption d-none d-md-block"
@@ -317,7 +319,7 @@ export default function Home() {
               src={slide3}
               alt="Third slide"
               id="home-slider-img"
-              height="700px"
+              height="auto"
             />
             <div
               className="carousel-caption d-none d-md-block"
@@ -399,48 +401,43 @@ export default function Home() {
         id="about"
       >
         <div className="row">
-          <div className="col-sm-12">
-            <div className="row">
-              <div className="col-md-6">
-                <video loop autoPlay id="video">
-                  <source src="https://rr3---sn-gwpa-pmjs.googlevideo.com/videoplayback?expire=1655828147&ei=U5qxYs2PJ5zZx_AP48et6AI&ip=156.146.41.30&id=o-AMg77LlAT1Y8bsh3xZj9ry0fM-Vupk9n4g8dPdGyV1FG&itag=18&source=youtube&requiressl=yes&spc=4ocVC561mr26SMVaBhyzszqBOrEDPr4&vprv=1&mime=video%2Fmp4&ns=xPMkCE6dtW_pQcCeTQSw7OUG&cnr=14&ratebypass=yes&dur=60.046&lmt=1653949194900670&fexp=24001373,24007246&c=WEB&txp=6218224&n=_acVv8JRLiuHyQ&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIgBar8umoelljoH8DATPco6FMcKq2pPVCbg5UzKYrPPWICICRO0tvZfRCmssTLerlEhcCkWaOgdfWr6JqNL6v44la1&redirect_counter=1&rm=sn-4g5eks7l&req_id=b623391eeeaa3ee&cms_redirect=yes&ipbypass=yes&mh=eT&mip=2405:201:5804:d008:65a2:6b79:1fa6:1b75&mm=31&mn=sn-gwpa-pmjs&ms=au&mt=1655806367&mv=m&mvi=3&pl=49&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRAIgCSHOqVX0OMrx-bXCvRtEnH9Y0ruV68JoAuiJUP-A2pYCIEw7Q0_icPCII1jRZiC-Unc0bVZn4CApHVEMmNPz6RBX" />
-                </video>
-              </div>
-              <div className="col-sm-6 pl-4 pr-5">
-                <h5 id="video-h5">
-                  Eum ipsam laborum deleniti
-                  <span id="h5-span">
-                    velit pariatur
-                    <br /> architecto aut nihil
-                  </span>
-                </h5>
-                <p id="video-p">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Duis aute irure dolor in reprehenderit
-                </p>
-                <p id="video-p">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <p id="video-p1">
-                  <i className="fa-solid fa-check-double"></i>Ullamco laboris
-                  nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p id="video-p1">
-                  <i className="fa-solid fa-check-double"></i>Duis aute irure
-                  dolor in reprehenderit in voluptate velit.
-                </p>
-                <p id="video-p1">
-                  <i className="fa-solid fa-check-double"></i>Ullamco laboris
-                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                  in reprehenderit in voluptate trideta storacalaperda mastiro
-                  dolore eu fugiat nulla pariatur.
-                </p>
-              </div>
+          <div className="col-md-6">
+            <div>
+              <img src={about} alt="about-pic" className="img-fluid" />
             </div>
           </div>
-
+          <div className="col-sm-6 pl-4 pr-2">
+            <h5 id="video-h5">
+              Eum ipsam laborum deleniti
+              <span id="h5-span">
+                velit pariatur
+                <br /> architecto aut nihil
+              </span>
+            </h5>
+            <p id="video-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+              aute irure dolor in reprehenderit
+            </p>
+            <p id="video-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p id="video-p1">
+              <i className="fa-solid fa-check-double"></i>Ullamco laboris nisi
+              ut aliquip ex ea commodo consequat.
+            </p>
+            <p id="video-p1">
+              <i className="fa-solid fa-check-double"></i>Duis aute irure dolor
+              in reprehenderit in voluptate velit.
+            </p>
+            <p id="video-p1">
+              <i className="fa-solid fa-check-double"></i>Ullamco laboris nisi
+              ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate trideta storacalaperda mastiro dolore
+              eu fugiat nulla pariatur.
+            </p>
+          </div>
           <p id="video-p3">
             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
             irure dolor in reprehenderit in voluptate velit esse cillum dolore
@@ -883,8 +880,11 @@ export default function Home() {
                 adipisci expedita at voluptas atque vitae autem.
               </p>
               <div className="row">
-                <div className="col-md-4" style={{ position: "relative" }}>
-                  <img src={chefs_1} alt="chefs-img" id="chefs-img" />
+                <div
+                  className="col-md-4"
+                  style={{ position: "relative", paddingTop: "20px" }}
+                >
+                  <img src={chefs_1} alt="chefs-img" className="img-fluid" />
                   <div>
                     <div id="chef-icon-div">
                       <h3 className="text-center" id="chefs-h3">
@@ -910,8 +910,11 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4" style={{ position: "relative" }}>
-                  <img src={chefs_2} alt="chefs-img" id="chefs-img" />
+                <div
+                  className="col-md-4"
+                  style={{ position: "relative", paddingTop: "20px" }}
+                >
+                  <img src={chefs_2} alt="chefs-img" className="img-fluid" />
                   <div>
                     <div id="chef-icon-div">
                       <h3 className="text-center" id="chefs-h3">
@@ -937,8 +940,11 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4" style={{ position: "relative" }}>
-                  <img src={chefs_3} alt="chefs-img" id="chefs-img" />
+                <div
+                  className="col-md-4"
+                  style={{ position: "relative", paddingTop: "20px" }}
+                >
+                  <img src={chefs_3} alt="chefs-img" className="img-fluid" />
                   <div>
                     <div id="chef-icon-div">
                       <h3 className="text-center" id="chefs-h3">

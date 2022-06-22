@@ -6,8 +6,7 @@
 }
 
 #nav {
-  padding-left: 130px;
-  padding-top: 18px;
+padding-top: 18px;
   padding-bottom: 18px;
  }
  .navbar{
@@ -21,19 +20,20 @@
  
  }
 #delicious {
-  padding-right: 30px;
+  padding-left: 80px;
+  padding-right: 50px;
   font-family: 'Cedarville Cursive', cursive;
   font-size: 30px;
  }
 #nav-ul{
-  padding-left: 40px;
+ 
   padding-bottom: 5px;
  font-weight: 600;
 font-family: 'Josefin Sans', sans-serif;
 
 }
 #nav-ul li{
-  padding-left: 15px;
+  padding-left: 18px;
 }
 #nav-btn{
   background: #ffb03b;
@@ -53,8 +53,8 @@ margin-left: 17px;
   color: #fff;
   background-color:#00000060;
   position: absolute;
-  height: 700px;
-  width: 100%;
+  height: 900px;
+  width: 1350px;
   
 }
 
@@ -70,7 +70,7 @@ margin-left: 17px;
  color: #ffb03b;
 }
 #home-slider-main-div{
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 #home-slider-h1{
   font-weight: 900;
@@ -118,32 +118,33 @@ letter-spacing: 1px;
   font-family: 'Cedarville Cursive', cursive;
   font-size: 30px;
   font-weight: 800;
+  padding-top: 10px;
   color: rgb(59, 55, 55);
 }
-#video{
-  margin-left: -15px;
-}
+
 #h5-span{
   font-weight: 900;
-  font-size: 36px;
+  font-size: 30px;
 }
 #video-p{
   font-family: 'Josefin Sans', sans-serif;  
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   color: rgb(112, 109, 109);
+
 }
 #video-p3{
   font-family: 'Josefin Sans', sans-serif;  
   font-weight: 700;
   font-size: 17px;
   color: rgb(112, 109, 109);
-  padding-left: 40px;
+  padding-left: 15px;
+  padding-top: 10px;
 }
 #video-p1{
   font-family: 'Josefin Sans', sans-serif;  
   font-weight: 900;
-  font-size: 18px;
+  font-size: 19px;
   margin-top: -5px;
   color: black;
 }
@@ -379,10 +380,7 @@ outline:none;
 }
 #photos{
   height: 300px;
-  width: 332px;
-  margin: 0;
   margin-left: -10px;
-  padding: 0;
   border-top: 5px solid white;
  transition: 2s;
 }
@@ -402,7 +400,6 @@ overflow: hidden;
 }
 #chefs-img{
   width:325px;
- 
 }
 #chef-icon-div{
   position: absolute;
@@ -410,6 +407,8 @@ overflow: hidden;
   width: 80%;
   bottom: -16%;
   padding: 10PX;
+  margin-bottom: 50px;
+  
   left:10%
 }
 #chefs-h3{
@@ -609,61 +608,8 @@ margin-left: 12px;
     transform: translateY(-1px);
   }
 }
-.js-preloader{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #292929;
-  z-index: 999999;
-  }
-#spinner-wrapper, #spinner-wrapper:before, #spinner-wrapper:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-.js-preloader{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #292929;
-  z-index: 999999;
-}
-.js-preloader, .js-preloader:before, .js-preloader:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-.preloader {
-width: 40px;
-height: 40px;
-background-color: #ed1c24;
-margin: -20px;
-animation: sk-rotateplane 1.2s infinite ease-in-out;
-position: absolute;
-left: 50%;
-top: 50%;
-}
-@keyframes sk-rotateplane {
-0% {
-  transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-  -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-}
-50% {
-  transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-  -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-}
-100% {
-  transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-}
-}
-.js-preloader.loaded {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+
+
 #special_est{
   margin-top: 10px;
   color: black;
@@ -723,6 +669,7 @@ top: 50%;
   border: none;
   outline: none;
   box-shadow: 3px 2px 2px pink;
+  margin-bottom: 30px;
  }
  .specialBtnActive{
   color: #1a1814;
